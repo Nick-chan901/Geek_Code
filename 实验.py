@@ -122,13 +122,3 @@ x = int(input("请输入待开方数："))
 p = int(input("请输入精度："))
 print("binary_sqrt:", end="")
 binary_sqrt(x, p)
-
-
-def sums(name, n):
-    res = 0
-    res = name * n
-
-
-a = 3
-b = 2
-print(sums(a, b))
