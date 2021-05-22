@@ -1,4 +1,7 @@
 # 162. 寻找峰值
+from math import nan, sqrt
+
+
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
         l, r = 0, len(nums) - 1
@@ -70,8 +73,6 @@ class Solution:
 
 # 二分法求平方根
 
-from math import sqrt
-
 
 def check_precision(l, h, p, len1):  # 检查是否达到了精确位
     l = str(l)
@@ -116,11 +117,18 @@ def binary_sqrt(x, p):
     return print_result(l, len1, p)  # 当达到了要求的精度，直接返回l
 
 
-while True:
-    x = int(input("请输入待开方数："))
-    p = int(input("请输入精度："))
-    print("binary_sqrt:", end="")
-    binary_sqrt(x, p)
+# while True:
+x = int(input("请输入待开方数："))
+p = int(input("请输入精度："))
+print("binary_sqrt:", end="")
+binary_sqrt(x, p)
 
-# 原作者：※夏日星空※
-# 原贴地址：https://blog.csdn.net/qq_34681949/article/details/83513371?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162133021716780262588545%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=162133021716780262588545&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-22-83513371.first_rank_v2_pc_rank_v29&utm_term=%E4%BA%8C%E5%88%86%E6%B3%95%E6%B1%82%E5%B9%B3%E6%96%B9%E6%A0%B9python&spm=1018.2226.3001.4449
+
+def sums(name, n):
+    res = 0
+    res = name * n
+
+
+a = 3
+b = 2
+print(sums(a, b))
